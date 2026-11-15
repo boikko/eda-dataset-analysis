@@ -7,6 +7,15 @@ A student pet project demonstrating exploratory data analysis (EDA) and statisti
 ### 📊 About the Project
 This project explores dataset metrics to uncover patterns, correlations, and distributions. It covers statistical summaries, multi-plot dashboards, regression analysis, correlation matrices, and interactive data visualizations.
 
+### 📁 About the Dataset
+The dataset contains **24,231 records** covering global public health statistics (specifically mortality rates across different regions and years):
+- **`location`**: Countries and regions worldwide (over 200 locations).
+- **`sex`**: Demographic breakdown (`Male`, `Female`, `Both`).
+- **`cause`**: Causes of death or disease groups (e.g., chronic respiratory diseases, injuries, etc.).
+- **`year`**: Observation years ranging from **2000 to 2008**.
+- **`val`**: Central estimated mortality rate value.
+- **`upper` & `lower`**: Upper and lower bounds of the statistical confidence intervals.
+
 ### 🛠 Tech Stack
 - **Language:** Python 3.x
 - **Libraries:** 
@@ -42,9 +51,11 @@ An interactive web-based scatter plot allowing you to hover over data points, in
    ```bash
    git clone [https://github.com/boikko/eda-dataset-analysis.git](https://github.com/boikko/eda-dataset-analysis.git)
    cd eda-dataset-analysis
-   
+   ```
 2. Install required dependencies: 
 pip install pandas numpy matplotlib seaborn plotly
 
 3. Run the script:
 python lab5_1.py
+
+Created as part of practical software development & data analysis training.

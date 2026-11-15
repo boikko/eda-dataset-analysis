@@ -5,7 +5,7 @@ import seaborn as sns
 import plotly.express as px
 
 # 1. Reading the dataset
-df = pd.read_csv('DatasetL5_1 (2).csv')
+df = pd.read_csv('data.csv')
 
 print("--- First 5 rows of the DataFrame ---")
 print(df.head())

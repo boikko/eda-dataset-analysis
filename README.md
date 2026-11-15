@@ -5,7 +5,7 @@ A student pet project demonstrating exploratory data analysis (EDA) and statisti
 ---
 
 ### 📊 About the Project
-This project explores dataset metrics to uncover patterns, correlations, and distributions. It covers statistical summaries, multi-plot dashboards, regression analysis, and interactive visualizations.
+This project explores dataset metrics to uncover patterns, correlations, and distributions. It covers statistical summaries, multi-plot dashboards, regression analysis, correlation matrices, and interactive data visualizations.
 
 ### 🛠 Tech Stack
 - **Language:** Python 3.x
@@ -26,6 +26,14 @@ The multi-plot dashboard combines scatter plots, distribution histograms with KD
 Analyzing the relationship between values and upper bounds using regression fitting:
 ![Joint Distribution](joint_distribution.png)
 
+#### 3. Pairwise Relationships Matrix (Pairplot)
+A correlation matrix across all numeric columns (`year`, `val`, `upper`, `lower`), showing pairwise scatter plots and univariate distributions:
+![Pairplot Matrix](pairplot_matrix.png)
+
+#### 4. Interactive Plotly Scatter Plot
+An interactive web-based scatter plot allowing you to hover over data points, inspect details (such as cause, year, and location), and explore the data dynamically:
+![Interactive Plotly Plot](plotly_interactive.png)
+
 ---
 
 ### 🚀 How to Run Locally
@@ -34,6 +42,7 @@ Analyzing the relationship between values and upper bounds using regression fitt
    ```bash
    git clone [https://github.com/boikko/eda-dataset-analysis.git](https://github.com/boikko/eda-dataset-analysis.git)
    cd eda-dataset-analysis
+   
 2. Install required dependencies: 
 pip install pandas numpy matplotlib seaborn plotly
 

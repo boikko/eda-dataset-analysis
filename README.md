@@ -16,6 +16,8 @@ The dataset contains **24,231 records** covering global public health statistics
 - **`val`**: Central estimated mortality rate value.
 - **`upper` & `lower`**: Upper and lower bounds of the statistical confidence intervals.
 
+> **📌 Note on Data:** The inclusion of lower and upper bounds required special attention during data cleaning and outlier handling due to variations in data collection quality across different global regions.
+
 ### 🛠 Tech Stack
 - **Language:** Python 3.x
 - **Libraries:** 
@@ -26,6 +28,8 @@ The dataset contains **24,231 records** covering global public health statistics
 ---
 
 ### 📈 Visualizations & Results
+
+> **💡 Key Insight:** The pairplot and regression analysis revealed a strong near-linear relationship between central estimates (`val`) and upper bounds (`upper`), highlighting a consistent statistical pattern across mortality categories.
 
 #### 1. Exploratory Data Analysis Dashboard (2x2 Grid)
 The multi-plot dashboard combines scatter plots, distribution histograms with KDE, and boxplots to provide a comprehensive statistical overview:
@@ -52,10 +56,12 @@ An interactive web-based scatter plot allowing you to hover over data points, in
    git clone [https://github.com/boikko/eda-dataset-analysis.git](https://github.com/boikko/eda-dataset-analysis.git)
    cd eda-dataset-analysis
    ```
-2. Install required dependencies: 
-pip install pandas numpy matplotlib seaborn plotly
-
-3. Run the script:
-python lab5_1.py
-
+2. Install required dependencies:
+   ```bash
+    pip install pandas numpy matplotlib seaborn plotly  
+   ```
+4. Run the script:
+   ```bash
+    python lab5_1.py
+   ```
 Created as part of practical software development & data analysis training.
